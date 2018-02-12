@@ -13,7 +13,7 @@ npm install -g json-server
 
 Start the JSON Server specifying the mocked states JSON file and leave it open
 ```
-json-server --watch db.json
+json-server --watch mock.json
 ```
 
 # Getting Started
@@ -40,7 +40,7 @@ It uses BrowserSync that provides live reload which refresh the application in t
 
 ### Unit testing
 
-`npm run test` or  `npm run test:auto` to launch the unit tests defined with Jasmine (testing framework) and Karma (test Runner).
+`npm run test` or  `gulp test` to launch the unit tests defined with Jasmine (testing framework) and Karma (test Runner).
 
 ### E2E testing
 > Note: e2e testing needs to have jdk installed.
