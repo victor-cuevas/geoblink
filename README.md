@@ -18,7 +18,7 @@ json-server --watch mock.json
 
 # Getting Started
 
-## Installing
+## Installing on new terminal
 
 Download the  project:
 ```
