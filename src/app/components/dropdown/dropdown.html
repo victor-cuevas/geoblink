@@ -1,4 +1,4 @@
-<div class="col-sm-4">
+<div class="col-md-4 col-xs-12">
     <uib-dropdown class="dropdown-container">
         <uib-dropdown-toggle id="single-button" type="button" class="dropdown-button" ng-class="{'grey': !vm.simpleSelectedState}">
             {{vm.simpleSelectedState || 'State'}} <span class="caret"></span>
@@ -10,13 +10,11 @@
 
 </div>
 
-<div class="col-sm-4">
-
+<div class="col-md-4 col-xs-12">
     <ui-select id="multiple-button" ng-model="vm.selectedState" multiple theme="selectize">
        <ui-select-match placeholder="State">{{$item.value}}</ui-select-match>
        <ui-select-choices repeat="(key, item) in vm.data | filter: $select.search">
          <div ng-bind-html="item.value | highlight: $select.search"></div>
        </ui-select-choices>
      </ui-select>
-
 </div>

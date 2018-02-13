@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use strict';
 
 // An example configuration file.
@@ -9,6 +10,12 @@ exports.config = {
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome'
+  },
+
+  onPrepare: function() {
+    jasmine.getEnv().addReporter({specStarted: function(result) {
+      console.log('\n' + result.description);
+    }});
   },
 
   baseUrl: 'http://localhost:3001',
