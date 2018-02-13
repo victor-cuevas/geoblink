@@ -20,8 +20,13 @@ npm install -g json-server
 
 Start the JSON Server specifying the mocked states JSON file and leave it open
 ```
-json-server --watch mock.json or json-server --watch geoblink/mock.json depending on the terminal location
+json-server --watch mock.json
 ```
+or
+```
+json-server --watch geoblink/mock.json
+```
+depending on the terminal location
 
 # Getting Started
 
