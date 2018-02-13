@@ -12,7 +12,7 @@
 
 <div class="col-sm-4">
 
-    <ui-select ng-model="vm.selectedState" multiple theme="selectize">
+    <ui-select id="multiple-button" ng-model="vm.selectedState" multiple theme="selectize">
        <ui-select-match placeholder="State">{{$item.value}}</ui-select-match>
        <ui-select-choices repeat="(key, item) in vm.data | filter: $select.search">
          <div ng-bind-html="item.value | highlight: $select.search"></div>
